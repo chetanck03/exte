@@ -1,4 +1,4 @@
-# Asentia Labs - Deepgram Transcription Chrome Extension
+#  Deepgram Transcription Chrome Extension
 
 A Chrome extension that provides real-time audio transcription for any tab using Deepgram's AI-powered speech recognition API.
 
@@ -28,7 +28,7 @@ This extension allows you to:
 
 1. Clone the repository:
    ```
-   git clone https://github.com/Chetanck03/asentia-labs.git
+   git clone https://github.com/chetanck03/ext.git
    
    ```
 
