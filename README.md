@@ -28,8 +28,8 @@ This extension allows you to:
 
 1. Clone the repository:
    ```
-   git clone https://github.com/your-username/asentia-labs.git
-   cd asentia-labs
+   git clone https://github.com/Chetanck03/asentia-labs.git
+   
    ```
 
 2. Install dependencies:
