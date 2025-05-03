@@ -28,7 +28,7 @@ This extension allows you to:
 
 1. Clone the repository:
    ```
-   git clone https://github.com/chetanck03/ext.git
+   git clone https://github.com/chetanck03/exte.git
    
    ```
 
