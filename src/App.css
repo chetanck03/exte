@@ -1,0 +1,194 @@
+#root {
+  /* Keep existing root styles */
+  max-width: 400px; /* Adjust max-width for a popup */
+  margin: 0 auto;
+  padding: 1rem; /* Reduce padding slightly */
+  text-align: center;
+  font-family: sans-serif;
+}
+
+/* Remove logo styles if not used in popup */
+/* .logo { ... } */
+/* .logo:hover { ... } */
+/* .logo.react:hover { ... } */
+/* @keyframes logo-spin { ... } */
+/* @media (prefers-reduced-motion: no-preference) { ... } */
+
+.App {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem; /* Add spacing between cards */
+}
+
+.card {
+  padding: 1.5em; /* Adjust padding */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  text-align: left; /* Align card content left */
+}
+
+.card h2 {
+  margin-top: 0;
+  margin-bottom: 1em;
+  font-size: 1.1em;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 0.5em;
+}
+
+/* Input and Button Styling */
+input[type="password"],
+input[type="range"],
+input[type="color"],
+button {
+  padding: 8px 12px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  margin-right: 5px; /* Spacing for inline elements */
+}
+
+input[type="password"] {
+    width: calc(80% - 10px); /* Adjust width considering padding/border */
+    margin-bottom: 10px;
+}
+
+button {
+  background-color: #646cff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #535bf2;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Status Indicator */
+.status-indicator {
+  margin-bottom: 1em;
+  font-weight: bold;
+}
+
+.status-connected {
+  color: green;
+}
+
+.status-disconnected,
+.status-connecting {
+  color: orange;
+}
+
+.status-error {
+  color: red;
+}
+
+/* Settings Card Specific Styles */
+.settings-card .setting-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Space out label and control */
+  margin-bottom: 1em;
+}
+
+.settings-card label {
+  margin-right: 10px;
+}
+
+.settings-card input[type="range"] {
+  flex-grow: 1; /* Allow slider to take available space */
+  max-width: 150px; /* Limit slider width */
+}
+
+.settings-card input[type="color"] {
+  padding: 0; /* Remove padding for color input */
+  border: none;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+/* Toggle Switch Styles */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px; /* Width of the switch */
+  height: 24px; /* Height of the switch */
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px; /* Size of the knob */
+  width: 18px;
+  left: 3px; /* Position of the knob */
+  bottom: 3px;
+  background-color: white;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #646cff; /* Color when ON */
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #646cff;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px); /* Move knob to the right */
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 24px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/* Transcript Area */
+.transcript-card {
+  margin-top: 1rem;
+}
+
+.transcript-area {
+  margin-top: 15px;
+  min-height: 100px;
+  max-height: 200px; /* Limit height */
+  border: 1px solid #ccc;
+  padding: 10px;
+  background: #ffffff; /* White background */
+  overflow-y: auto;
+  line-height: 1.5;
+}
+
+.transcript-area p {
+  margin: 0;
+}
+
+.read-the-docs {
+  color: #888;
+}
